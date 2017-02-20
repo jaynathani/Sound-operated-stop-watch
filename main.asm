@@ -358,7 +358,6 @@ check_acc_sec:
 	lcall LCD_PrCString
 	ljmp loop							;jump out to check for long press
 
-
 check_acc_end:
 	cmp [addr_shrt_p], 04h				;Accuracy Mode has only 4 SP state
 	jc loop								;if SP value is less than 4, it is a known SP state					
